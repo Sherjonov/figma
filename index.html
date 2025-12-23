@@ -1,192 +1,1611 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <title>Createx Online School - Professional Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --primary-dark: #0099cc;
+            --dark: #000;
+            --darker: #111;
+            --card: #1a1a1a;
+            --text: #fff;
+            --text-muted: #aaa;
+            --success: #00ff88;
+            --warning: #ffaa00;
+        }
 
-<body>
-    <div class="ota">
-        <div class="menu">
-            <h1>CRATE<span>X</span></h1>
-            <ul>
-                <li>About Us</li>
-                <span>
-                    <li>Courses</li>
-                </span>
-                <li>Events</li>
-                <li>Blog</li>
-                <li>Contacts</li>
-            </ul>
-            <button>Get Consultation</button>
-            <h4>
-                <i class="fa-solid fa-user"></i>
-                Log in/Register
-            </h4>
-        </div>
-        <nav>
-            <h2>ENJOY YOUR STUDYING</h2>
-            <h1>Our online courses</h1>
-        </nav>
-        <div class="text">
-            <h4><button class="z">All<sup>17</sup></button></h4>
-            <h4>Marketing<sup>4</sup></h4>
-            <h4>Managiment<sup>5</sup></h4>
-            <h4>HR&Recruting<sup>5</sup></h4>
-            <h4>Design<sup>2</sup></h4>
-            <h4>Develompment<sup>3</sup></h4>
-            <input type="text" placeholder="Search course...">
-        </div>
-        <section>
-            <div class="box1">
-            <img src="5719088561c8ec14b31455901e6aced2.jpg" alt="">
-            <h4>Marketing</h4>
-            <h3>The Ultimate Google Ads Training Course</h3>
-            <p><span>$100</span> | by Jerome Bell</p>
-        </div>
-        <div class="box1">
-            <img src="dada93a61e7f51ac6388e22a998e52c3.jpg" alt="">
-            <h4 style="background-color: blue;">Management</h4>
-            <h3>Prduct Management Fundamentals</h3>
-            <p> <span> $480</span> | by Marvin McKinney</p>
-        </div>
-        <div class="box1">
-            <img src="9ec3475582a6f6129b6ad3aed940c4d0.jpg" alt="">
-<h4 style="background-color: orange;">HR & Recruting</h4>
-<h3>HR  Management and Analytics</h3>
-<p> <span>$200</span> | by Leslie Alexander Li</p>
-</div>
-<div class="box1">
-    <img src="ad5827ead11861fa456bdb395058c281.jpg" alt="">
-    <h4>Marketing</h4>
-    <h3>Brand Management & PR Communications</h3>
-    <p><span>$530</span>  | by Kristin Watson</p>
-</div>
-<div class="box1">
-    <img src="57590e8cdfee47506b5afbb5f1d3d251.jpg" alt="">
-    <h4 style="background-color: red;">Design</h4>
-    <h3>Graphic Design Basic</h3>
-    <p><span> $500</span> |  by Guy Hawkins</p>
-</div>
-<div class="box1">
-    <img src="7f5d4163ea9599946af07d3d52f61d21.jpg" alt="">
-    <h4 style="background-color: blue;">Management</h4>
-    <h3>Business Development Management</h3>
-    <p><span>$400</span> |  by Dianne Russell</p>
-</div>
-<div class="box1">
-    <img src="2f3ca140714e87c67d19cee808f942e3.jpg" alt="">
-    <h4 style="background-color: rgb(190, 19, 243);">Development</h4>
-    <h3>Highload Software Architecture</h3>
-    <p> <span></span> | by Brooklyn Simmons </p>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         
-</div>
-<div class="box1">
-    <img src="1f9df64680ce9ae8deb70c4fd6494a76.jpg" alt="">
-    <h4 style="background-color: orange;">HR & Recruting</h4>
-    <h3>Human Resources – Selection and Recruitment</h3>
-    <p><span>$150</span> |  by Kathryn Murphy</p>
-       
-</div>
-<div class="box1">
-    <img src="f1e363e8eb007225e0b26ec15b87aa9b.jpg" alt="">
-    <h4 style="background-color: red;">Design</h4>
-    <h3>User Experience. Human-centered Design</h3>
-    <p><span>$240</span> | by Cody Fisher</p>
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background: var(--dark); 
+            color: var(--text); 
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         
-</div>
-<p class="p">
-<i class="fa-solid fa-repeat"></i> Load More
-</p>
-        </section>
-        <div class="boxlar">
-            <h2>TESTIMONIALS</h2>
-            <h1>What our students say</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
-            <p class="m5">
-            <img src="38f2839d5f3bd92da1bcfedea3f794bd.jpg" alt="">
-            <h3 class="m">Eleanor Pena</h3>
-            <p class="m12">  Position, Course</p>
-        </div>
-        <div class="footer">
-            <h2>Createx Certificate</h2>
-            <h1>Your expertise will be confirmed</h1>
-            <p>Createx Certificate
-                Your expertise will be confirmed
-                We are accredited by international professional organizations and institutes:</p>
-                <img src="6afdf1f72816e329108ee95b793a0fa3.png" alt="">
-                <img src="4801af3167836bb4bd26de283d07647c.png" alt="">
-                <img src="7cc557289cfe4b8567a5d61754d4b618.png" alt="">
-        </div>
-        <div class="img">
-            <img src="211a849650bc5a6168b5589fd2027c4d.jpg" alt="">
-        </div>
-        <div class="footer1">
-            <h2>Don't miss anything</h2>
-            <h1>Subscribe to the Createx School announcements</h1>
-            <input type="text" placeholder="Your Working Email">
-            <button>Subscribe</button>
-        </div>
-        <footer>
-            <div class="ota2">
-        <div class="oxiri">
-            <h1> CREATE<span>X</span></h1>
-            <p>Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
-            <i class="fa-brands fa-facebook-f fa-2x"></i>
-            <i class="fa-brands fa-twitter fa-2x"></i>
-            <i class="fa-brands fa-youtube fa-2x"></i>
-            <i class="fa-brands fa-telegram fa-2x"></i> 
-            <i class="fa-brands fa-instagram fa-2x"></i>
-            <i class="fa-brands fa-invision fa-2x"></i>
-        </div>
-        <div class="oxir1">
+        a { 
+            text-decoration: none; 
+            color: inherit; 
+            transition: color 0.3s ease;
+        }
+
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+
+        /* HEADER */
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px 0; 
+            position: sticky; 
+            top: 0; 
+            background: rgba(0,0,0,0.95); 
+            backdrop-filter: blur(20px); 
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .header.scrolled { 
+            padding: 15px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        }
+        
+        .logo { 
+            font-size: 32px; 
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .logo span { 
+            color: var(--primary); 
+            animation: glow 2s ease-in-out infinite alternate; 
+        }
+        
+        @keyframes glow { 
+            0% { 
+                text-shadow: 0 0 10px var(--primary); 
+            } 
+            100% { 
+                text-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary); 
+            } 
+        }
+        
+        .nav-menu { 
+            display: flex; 
+            gap: 32px; 
+            list-style: none; 
+        }
+        
+        .nav-item { 
+            cursor: pointer; 
+            position: relative;
+            transition: all 0.3s ease; 
+            padding: 10px 0;
+            font-weight: 500;
+        }
+        
+        .nav-item::after {
+            content: ''; 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 0; 
+            height: 2px; 
+            background: var(--primary); 
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item:hover::after { 
+            width: 100%; 
+        }
+        
+        .nav-item:hover { 
+            color: var(--primary); 
+        }
+
+        .btn-primary { 
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark)); 
+            border: none; 
+            padding: 12px 30px; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            font-weight: 600; 
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,212,255,0.3);
+            font-size: 15px;
+            color: var(--dark);
+        }
+        
+        .btn-primary:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 10px 25px rgba(0,212,255,0.4); 
+        }
+
+        .user-auth { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            font-weight: 500; 
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .user-auth:hover { 
+            color: var(--primary); 
+        }
+
+        /* HERO */
+        .hero { 
+            text-align: center; 
+            padding: 120px 0 80px; 
+            background: linear-gradient(135deg, var(--darker) 0%, var(--card) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0,212,255,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0,212,255,0.03) 0%, transparent 50%);
+        }
+        
+        .subtitle { 
+            font-size: 18px; 
+            letter-spacing: 5px; 
+            color: var(--primary); 
+            animation: slideInUp 1s ease;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .hero-title { 
+            font-size: 64px; 
+            font-weight: 800;
+            margin-top: 15px; 
+            animation: slideInUp 1s ease 0.2s both;
+            line-height: 1.1;
+            background: linear-gradient(45deg, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @keyframes slideInUp { 
+            from { 
+                opacity: 0; 
+                transform: translateY(50px); 
+            } 
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        }
+
+        /* FILTERS */
+        .filters { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 12px; 
+            align-items: center; 
+            margin: 0 0 60px;
+            justify-content: center;
+        }
+        
+        .filter-btn { 
+            background: var(--card); 
+            padding: 12px 25px; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            border: 2px solid transparent;
+            white-space: nowrap;
+        }
+        
+        .filter-btn.active { 
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark)); 
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .filter-btn:hover { 
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .search-input { 
+            padding: 15px 25px; 
+            border: 2px solid var(--card); 
+            border-radius: 50px; 
+            background: var(--card); 
+            width: 320px; 
+            color: var(--text); 
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+        
+        .search-input:focus { 
+            outline: none; 
+            border-color: var(--primary); 
+            box-shadow: 0 0 20px rgba(0,212,255,0.2);
+        }
+
+        /* COURSE CARDS */
+        .courses-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 30px; 
+            margin-bottom: 80px; 
+        }
+        
+        .course-card { 
+            background: var(--card); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            opacity: 0;
+            transform: translateY(50px);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .course-card.animate { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        
+        .course-card:hover { 
+            transform: translateY(-15px) scale(1.02); 
+            box-shadow: 0 25px 50px rgba(0,212,255,0.2);
+            border-color: var(--primary);
+        }
+        
+        .course-card::before {
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            height: 4px; 
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark), var(--primary));
+            transform: scaleX(0); 
+            transition: transform 0.3s ease;
+        }
+        
+        .course-card:hover::before { 
+            transform: scaleX(1); 
+        }
+        
+        .course-image { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            transition: transform 0.4s ease;
+        }
+        
+        .course-card:hover .course-image { 
+            transform: scale(1.05); 
+        }
+        
+        .course-category { 
+            padding: 20px 25px 5px; 
+            font-size: 14px; 
+            color: #fff; 
+            display: inline-block; 
+            border-radius: 20px; 
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .course-title { 
+            padding: 0 25px 15px; 
+            font-size: 22px; 
+            line-height: 1.3;
+            transition: color 0.3s;
+            font-weight: 700;
+            min-height: 66px;
+        }
+        
+        .course-card:hover .course-title { 
+            color: var(--primary); 
+        }
+        
+        .course-meta { 
+            padding: 0 25px 25px; 
+            color: var(--text-muted); 
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .course-price { 
+            color: var(--primary); 
+            font-weight: bold; 
+            font-size: 24px; 
+        }
+
+        .load-more { 
+            text-align: center; 
+            font-size: 18px; 
+            cursor: pointer; 
+            color: var(--primary); 
+            margin: 60px auto; 
+            padding: 15px 40px;
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            font-weight: 600;
+        }
+        
+        .load-more:hover { 
+            background: var(--primary); 
+            color: var(--dark); 
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,212,255,0.3);
+        }
+
+        /* TESTIMONIALS */
+        .testimonials { 
+            text-align: center; 
+            padding: 100px 0; 
+            background: linear-gradient(135deg, var(--darker) 0%, var(--card) 100%);
+            border-radius: 30px; 
+            margin: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: ''; 
+            position: absolute; 
+            top: -50%; 
+            left: -50%; 
+            width: 200%; 
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,212,255,0.05) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float { 
+            0%, 100% { 
+                transform: translateY(0) rotate(0deg); 
+            } 
+            50% { 
+                transform: translateY(-20px) rotate(180deg); 
+            } 
+        }
+        
+        .section-subtitle { 
+            color: var(--primary); 
+            letter-spacing: 4px; 
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .section-title { 
+            font-size: 48px; 
+            margin-bottom: 25px; 
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .section-description { 
+            max-width: 800px; 
+            margin: 0 auto 50px; 
+            color: var(--text-muted); 
+            font-size: 18px; 
+            line-height: 1.6;
+        }
+        
+        .testimonial-content { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 20px;
+        }
+        
+        .testimonial-avatar { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            border: 4px solid var(--primary); 
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+        
+        .testimonial-avatar:hover { 
+            transform: scale(1.1) rotate(5deg); 
+        }
+        
+        .testimonial-name { 
+            font-size: 28px; 
+            margin-bottom: 5px; 
+            font-weight: 700;
+        }
+        
+        .testimonial-role { 
+            color: var(--text-muted); 
+            font-size: 16px; 
+        }
+
+        /* CERTIFICATE */
+        .certificates { 
+            text-align: center; 
+            padding: 100px 0; 
+            background: var(--card);
+            border-radius: 30px;
+            margin: 100px 0;
+        }
+        
+        .certificates-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .certificate-logo { 
+            height: 70px; 
+            filter: drop-shadow(0 10px 20px rgba(0,212,255,0.3));
+            transition: all 0.3s ease;
+        }
+        
+        .certificate-logo:hover { 
+            transform: translateY(-5px) scale(1.1); 
+            filter: drop-shadow(0 15px 30px rgba(0,212,255,0.5)); 
+        }
+
+        /* NEWSLETTER */
+        .newsletter { 
+            text-align: center; 
+            background: linear-gradient(135deg, var(--darker) 0%, var(--card) 100%);
+            padding: 80px 0; 
+            border-radius: 30px; 
+            margin: 100px 0;
+            position: relative;
+        }
+        
+        .newsletter::after {
+            content: ''; 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark), var(--primary));
+        }
+        
+        .subscribe-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .subscribe-input { 
+            padding: 18px 30px; 
+            border: 2px solid var(--card); 
+            border-radius: 50px; 
+            background: var(--card); 
+            color: var(--text); 
+            flex: 1;
+            min-width: 300px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .subscribe-input:focus { 
+            outline: none; 
+            border-color: var(--primary); 
+            box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
+        }
+
+        /* FOOTER */
+        footer { 
+            background: var(--darker); 
+            padding: 80px 0 40px; 
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .footer-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 50px; 
+        }
+        
+        .footer-about h1 { 
+            margin-bottom: 20px; 
+        }
+        
+        .footer-about p { 
+            color: var(--text-muted); 
+            margin: 20px 0 30px; 
+            line-height: 1.7;
+        }
+        
+        .social-icons { 
+            display: flex; 
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .social-icon { 
+            width: 45px; 
+            height: 45px; 
+            background: var(--card); 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+        
+        .social-icon:hover { 
+            background: var(--primary); 
+            color: var(--dark); 
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 10px 25px rgba(0,212,255,0.3);
+        }
+
+        .footer-column h3 { 
+            margin-bottom: 25px; 
+            color: var(--primary); 
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .footer-column ul { 
+            list-style: none; 
+        }
+        
+        .footer-column li { 
+            margin-bottom: 12px; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+            padding: 5px 0;
+        }
+        
+        .footer-column li:hover { 
+            color: var(--primary); 
+            padding-left: 10px;
+        }
+        
+        .footer-contact i { 
+            color: var(--primary); 
+            margin-right: 10px; 
+            width: 20px;
+        }
+
+        .newsletter-subscribe h3 { 
+            color: var(--primary); 
+            margin-bottom: 20px; 
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .newsletter-subscribe input { 
+            width: 100%; 
+            padding: 15px 20px; 
+            background: var(--card); 
+            border: 2px solid var(--card); 
+            border-radius: 12px; 
+            color: var(--text); 
+            margin: 15px 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-subscribe input:focus { 
+            outline: none; 
+            border-color: var(--primary); 
+            box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
+        }
+        
+        .newsletter-subscribe p { 
+            color: var(--text-muted); 
+            font-size: 14px; 
+            line-height: 1.5;
+        }
+
+        .footer-bottom { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 30px; 
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .scroll-top { 
+            cursor: pointer; 
+            color: var(--primary); 
+            font-weight: 600;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .scroll-top:hover { 
+            transform: translateY(-2px); 
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: linear-gradient(135deg, var(--card) 0%, var(--darker) 100%);
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            animation: modalSlideIn 0.4s ease;
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+        
+        @keyframes modalSlideIn { 
+            from { 
+                opacity: 0; 
+                transform: translateY(-50px) scale(0.9); 
+            } 
+            to { 
+                opacity: 1; 
+                transform: translateY(0) scale(1); 
+            } 
+        }
+        
+        .modal-close { 
+            position: absolute; 
+            right: 20px; 
+            top: 20px; 
+            color: var(--primary); 
+            font-size: 30px; 
+            cursor: pointer;
+            transition: 0.3s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .modal-close:hover { 
+            background: rgba(0,212,255,0.1); 
+            transform: rotate(90deg); 
+        }
+
+        /* LOADING */
+        .loading { 
+            display: none; 
+            text-align: center; 
+            padding: 40px; 
+        }
+        
+        .spinner {
+            border: 3px solid var(--card);
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin { 
+            0% { 
+                transform: rotate(0deg); 
+            } 
+            100% { 
+                transform: rotate(360deg); 
+            } 
+        }
+
+        /* NOTIFICATION */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            color: var(--dark);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+            transform: translateX(400px);
+            transition: transform 0.4s ease;
+            z-index: 3000;
+            font-weight: 600;
+            max-width: 400px;
+            word-break: break-word;
+        }
+        
+        .notification.show { 
+            transform: translateX(0); 
+        }
+        
+        .notification.error {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+        }
+        
+        .notification.warning {
+            background: linear-gradient(45deg, #ffa502, #ff7f00);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 48px;
+            }
             
-            <ul class="in">
-                <h3>STIE MAP</h3>
-                <li>About Us</li>
-                <li>Courses</li>
-                <li>Events</li>
-                <li>Blog</li>
-                <li>Contacts</li>
-            </ul>
-        </div>
-        <div class="oxirgi2">
-            <ul class="im">
-                <h3>COURSES</h3>
-                <li>Marketing</li>
-                <li>Management</li>
-                <li>HR & Recruting</li>
-                   <li> Design</li>
-                <li>Development</li>
-            </ul>
-        </div>
-        <div class="oxirgi3">
-            <ul class="iz">
-            <h3>CONTACT US</h3>
-            <li><i class="fa-solid fa-mobile"></i> (405) 555-0128</li>
-            <li><i class="fa-solid fa-envelope"></i> hello@createx.com</li>
-        </ul>
-        </div>
-        <div class="songisi">
-            <h3>SIGN UP TO OUR NEWSLETTER</h3>
-            <input type="text" placeholder="Email Holder">
-            <p> *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
-        </div>
-        <div class="footer2">
-            <h4>© All rights reserved.
-                Made with
-                by Createx Studio </h4>
-                <h4 class="abu8">GO TO TOP</h4>
-        </div>
-    </div>
-    </footer>
-    </div>
-</body>
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .courses-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
 
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 20px;
+                padding: 15px 0;
+            }
+            
+            .nav-menu {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-input {
+                width: 100%;
+                min-width: auto;
+            }
+            
+            .courses-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .subscribe-input {
+                min-width: auto;
+                width: 100%;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 28px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .course-card {
+                margin: 0 10px;
+            }
+            
+            .certificates-logos {
+                flex-direction: column;
+            }
+            
+            .modal-content {
+                padding: 30px 20px;
+                margin: 10% auto;
+            }
+        }
+
+        /* UTILITY CLASSES */
+        .gradient-text {
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-0 { margin-bottom: 0 !important; }
+        .mt-0 { margin-top: 0 !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <h1 class="logo">CRATE<span>X</span></h1>
+            <ul class="nav-menu">
+                <li class="nav-item">About Us</li>
+                <li class="nav-item">Courses</li>
+                <li class="nav-item">Events</li>
+                <li class="nav-item">Blog</li>
+                <li class="nav-item">Contacts</li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <button class="btn-primary" onclick="openModal()">Get Consultation</button>
+                <div class="user-auth" onclick="openLogin()">
+                    <i class="fa-solid fa-user"></i>
+                    Log in / Register
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <h2 class="subtitle">ENJOY YOUR STUDYING</h2>
+            <h1 class="hero-title">Our online courses</h1>
+        </section>
+
+        <!-- FILTERS -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All<sup>17</sup></button>
+            <button class="filter-btn" data-filter="marketing">Marketing<sup>4</sup></button>
+            <button class="filter-btn" data-filter="management">Management<sup>5</sup></button>
+            <button class="filter-btn" data-filter="hr">HR & Recruiting<sup>5</sup></button>
+            <button class="filter-btn" data-filter="design">Design<sup>2</sup></button>
+            <button class="filter-btn" data-filter="development">Development<sup>3</sup></button>
+            <input type="text" class="search-input" id="searchInput" placeholder="🔍 Search course...">
+        </div>
+
+        <!-- COURSES -->
+        <div class="courses-grid" id="courseSection">
+            <!-- Courses will be dynamically added here -->
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading more courses...</p>
+        </div>
+
+        <div class="text-center">
+            <button class="load-more" onclick="loadMore()">
+                <i class="fa-solid fa-repeat"></i> Load More
+            </button>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <h2 class="section-subtitle">TESTIMONIALS</h2>
+            <h1 class="section-title">What our students say</h1>
+            <p class="section-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra 
+                mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi.
+            </p>
+            <div class="testimonial-content">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Eleanor Pena" class="testimonial-avatar">
+                <h3 class="testimonial-name">Eleanor Pena</h3>
+                <p class="testimonial-role">Senior Product Designer, Google Ads Course</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATE -->
+        <section class="certificates">
+            <h2 class="section-subtitle">Createx Certificate</h2>
+            <h1 class="section-title">Your expertise will be confirmed</h1>
+            <p class="section-description mb-0">
+                We are accredited by international professional organizations and institutes:
+            </p>
+            <div class="certificates-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo_TV_2015.png/200px-Logo_TV_2015.png" alt="Certificate 1" class="certificate-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/200px-Logo_of_Twitter.svg.png" alt="Certificate 2" class="certificate-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png" alt="Certificate 3" class="certificate-logo">
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2 class="section-subtitle">Don't miss anything</h2>
+            <h1 class="section-title">Subscribe to the Createx School announcements</h1>
+            <div class="subscribe-form">
+                <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="Your Working Email">
+                <button class="btn-primary" onclick="subscribeNewsletter()">Subscribe</button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h1 class="logo">CREATE<span>X</span></h1>
+                    <p>
+                        Createx Online School is a leader in online studying. We have lots of courses 
+                        and programs from the main market experts. We provide relevant approaches to 
+                        online learning, internships and employment.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                  <h3>SITE MAP</h3>
+                  <ul>
+                      <li>About Us</li>
+                      <li>Courses</li>
+                      <li>Events</li>
+                      <li>Blog</li>
+                      <li>Contacts</li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>COURSES</h3>
+                  <ul>
+                      <li>Marketing</li>
+                      <li>Management</li>
+                      <li>HR & Recruiting</li>
+                      <li>Design</li>
+                      <li>Development</li>
+                  </ul>
+              </div>
+              <div class="footer-column footer-contact">
+                  <h3>CONTACT US</h3>
+                  <ul>
+                      <li><i class="fa-solid fa-mobile"></i> (405) 555-0128</li>
+                      <li><i class="fa-solid fa-envelope"></i> hello@createx.com</li>
+                      <li><i class="fa-solid fa-map-marker-alt"></i> 4021 Sheridan Street, Washington, DC</li>
+                  </ul>
+              </div>
+              <div class="footer-column newsletter-subscribe">
+                  <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                  <input type="email" id="footerEmail" placeholder="Email Address">
+                  <p>*Subscribe to our newsletter to receive communications and early updates</p>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <h4>© 2025 All rights reserved. Made with ❤️ by Createx Studio</h4>
+              <h4 class="scroll-top" onclick="scrollToTop()">
+                  <i class="fa-solid fa-arrow-up"></i> GO TO TOP
+              </h4>
+          </div>
+      </footer>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="modal-close" onclick="closeModal()">&times;</span>
+          <i class="fa-solid fa-graduation-cap fa-3x" style="color: var(--primary); margin-bottom: 20px;"></i>
+          <h2 class="section-title" style="font-size: 32px;">Free Consultation</h2>
+          <p class="section-description" style="font-size: 16px;">
+              Schedule a free 30-minute consultation with our experts to discuss your learning goals 
+              and find the perfect course for you.
+          </p>
+          <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+              <button class="btn-primary" onclick="bookConsultation()" style="padding: 12px 30px;">
+                  Book Now
+              </button>
+              <button onclick="closeModal()" style="background: transparent; color: var(--primary); padding: 12px 25px; border-radius: 25px; border: 2px solid var(--primary); cursor: pointer; font-weight: 600;">
+                  Later
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <!-- NOTIFICATION -->
+  <div id="notification" class="notification"></div>
+
+  <script>
+      // INITIAL COURSE DATA
+      const courseData = [
+          {
+              id: 1,
+              title: "The Ultimate Google Ads Training Course",
+              category: "marketing",
+              price: "$100",
+              instructor: "Jerome Bell",
+              image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=350&h=220&fit=crop",
+              description: "Master Google Ads from beginner to advanced level"
+          },
+          {
+              id: 2,
+              title: "Product Management Fundamentals",
+              category: "management",
+              price: "$480",
+              instructor: "Marvin McKinney",
+              image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=350&h=220&fit=crop",
+              description: "Learn the core principles of product management"
+          },
+          {
+              id: 3,
+              title: "HR Management and Analytics",
+              category: "hr",
+              price: "$200",
+              instructor: "Leslie Alexander Li",
+              image: "https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?w=350&h=220&fit=crop",
+              description: "Modern HR practices with data analytics"
+          },
+          {
+              id: 4,
+              title: "Brand Management & PR Communications",
+              category: "marketing",
+              price: "$530",
+              instructor: "Kristin Watson",
+              image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=350&h=220&fit=crop",
+              description: "Build and maintain strong brand identity"
+          },
+          {
+              id: 5,
+              title: "Graphic Design Basic",
+              category: "design",
+              price: "$500",
+              instructor: "Guy Hawkins",
+              image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=350&h=220&fit=crop",
+              description: "Fundamentals of graphic design for beginners"
+          },
+          {
+              id: 6,
+              title: "Business Development Management",
+              category: "management",
+              price: "$400",
+              instructor: "Dianne Russell",
+              image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=350&h=220&fit=crop",
+              description: "Strategies for business growth and development"
+          },
+          {
+              id: 7,
+              title: "Highload Software Architecture",
+              category: "development",
+              price: "FREE",
+              instructor: "Brooklyn Simmons",
+              image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=350&h=220&fit=crop",
+              description: "Design scalable software systems"
+          },
+          {
+              id: 8,
+              title: "Human Resources – Selection and Recruitment",
+              category: "hr",
+              price: "$150",
+              instructor: "Kathryn Murphy",
+              image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=350&h=220&fit=crop",
+              description: "Modern recruitment and selection techniques"
+          },
+          {
+              id: 9,
+              title: "User Experience. Human-centered Design",
+              category: "design",
+              price: "$240",
+              instructor: "Cody Fisher",
+              image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=350&h=220&fit=crop",
+              description: "Create intuitive user experiences"
+          }
+      ];
+
+      // ADDITIONAL COURSES FOR LOAD MORE
+      const additionalCourses = [
+          {
+              id: 10,
+              title: "Advanced SEO & Content Marketing",
+              category: "marketing",
+              price: "$350",
+              instructor: "Samantha Wilson",
+              image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=350&h=220&fit=crop",
+              description: "Advanced SEO strategies and content marketing"
+          },
+          {
+              id: 11,
+              title: "Agile Project Management",
+              category: "management",
+              price: "$420",
+              instructor: "James Anderson",
+              image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=350&h=220&fit=crop",
+              description: "Master Agile methodologies for project management"
+          },
+          {
+              id: 12,
+              title: "Full Stack JavaScript Development",
+              category: "development",
+              price: "$600",
+              instructor: "Emily Chen",
+              image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=350&h=220&fit=crop",
+              description: "Become a full-stack JavaScript developer"
+          }
+      ];
+
+      // STATE MANAGEMENT
+      let state = {
+          currentFilter: 'all',
+          searchQuery: '',
+          loadedCourses: 9,
+          allCourses: [...courseData],
+          isLoading: false,
+          canLoadMore: true
+      };
+
+      // DOM ELEMENTS CACHE
+      const elements = {
+          header: document.getElementById('header'),
+          courseSection: document.getElementById('courseSection'),
+          modal: document.getElementById('modal'),
+          searchInput: document.getElementById('searchInput'),
+          subscribeEmail: document.getElementById('subscribeEmail'),
+          footerEmail: document.getElementById('footerEmail'),
+          loadMoreBtn: document.querySelector('.load-more'),
+          loading: document.getElementById('loading'),
+          notification: document.getElementById('notification'),
+          filterButtons: document.querySelectorAll('.filter-btn')
+      };
+
+      // INITIALIZATION
+      document.addEventListener('DOMContentLoaded', () => {
+          initializeApp();
+      });
+
+      function initializeApp() {
+          // Render initial courses
+          renderCourses(courseData);
+          
+          // Setup event listeners
+          setupEventListeners();
+          
+          // Initialize animations
+          initAnimations();
+          
+          // Show welcome notification
+          setTimeout(() => {
+              showNotification('Welcome to Createx! 🎓 Explore our courses', 'success');
+          }, 1000);
+      }
+
+      function setupEventListeners() {
+          // Header scroll effect
+          let scrollTimeout;
+          window.addEventListener('scroll', () => {
+              if (scrollTimeout) return;
+              scrollTimeout = setTimeout(() => {
+                  elements.header.classList.toggle('scrolled', window.scrollY > 100);
+                  scrollTimeout = null;
+              }, 50);
+          });
+
+          // Filter buttons
+          elements.filterButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                  const filter = button.dataset.filter;
+                  applyFilter(filter);
+              });
+          });
+
+          // Search input
+          elements.searchInput.addEventListener('input', debounce((e) => {
+              state.searchQuery = e.target.value.toLowerCase();
+              filterAndRenderCourses();
+          }, 300));
+
+          // Enter key for email inputs
+          elements.subscribeEmail.addEventListener('keypress', (e) => {
+              if (e.key === 'Enter') subscribeNewsletter();
+          });
+
+          elements.footerEmail.addEventListener('keypress', (e) => {
+              if (e.key === 'Enter') subscribeNewsletter();
+          });
+
+          // Modal close on outside click
+          window.addEventListener('click', (e) => {
+              if (e.target === elements.modal) closeModal();
+          });
+
+          // Escape key to close modal
+          document.addEventListener('keydown', (e) => {
+              if (e.key === 'Escape') closeModal();
+          });
+      }
+
+      function initAnimations() {
+          // Intersection Observer for course cards
+          const observerOptions = {
+              threshold: 0.1,
+              rootMargin: '0px 0px -50px 0px'
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('animate');
+                  }
+              });
+          }, observerOptions);
+
+          // Observe existing cards
+          document.querySelectorAll('.course-card').forEach(card => {
+              observer.observe(card);
+          });
+      }
+
+      function renderCourses(courses) {
+          elements.courseSection.innerHTML = '';
+          
+          courses.forEach(course => {
+              const categoryColors = {
+                  marketing: 'linear-gradient(45deg, #667eea, #764ba2)',
+                  management: 'linear-gradient(45deg, #4facfe, #00f2fe)',
+                  hr: 'linear-gradient(45deg, #fa709a, #fee140)',
+                  design: 'linear-gradient(45deg, #ffecd2, #fcb69f)',
+                  development: 'linear-gradient(45deg, #667eea, #764ba2)'
+              };
+
+              const courseElement = document.createElement('div');
+              courseElement.className = 'course-card';
+              courseElement.dataset.category = course.category;
+              courseElement.innerHTML = `
+                  <img src="${course.image}" alt="${course.title}" class="course-image">
+                  <div class="course-category" style="background: ${categoryColors[course.category] || '#667eea'}">
+                      ${course.category.charAt(0).toUpperCase() + course.category.slice(1)}
+                  </div>
+                  <h3 class="course-title">${course.title}</h3>
+                  <div class="course-meta">
+                      <span class="course-price">${course.price}</span>
+                      <span>by ${course.instructor}</span>
+                  </div>
+              `;
+              
+              // Add click event for course details
+              courseElement.addEventListener('click', () => {
+                  showCourseDetails(course);
+              });
+              
+              elements.courseSection.appendChild(courseElement);
+          });
+
+          // Re-initialize animations for new cards
+          setTimeout(() => {
+              document.querySelectorAll('.course-card').forEach(card => {
+                  if (!card.classList.contains('animate')) {
+                      card.classList.add('animate');
+                  }
+              });
+          }, 100);
+      }
+
+      function applyFilter(filter) {
+          // Update active filter button
+          elements.filterButtons.forEach(btn => {
+              btn.classList.remove('active');
+              if (btn.dataset.filter === filter) {
+                  btn.classList.add('active');
+              }
+          });
+
+          state.currentFilter = filter;
+          filterAndRenderCourses();
+          
+          showNotification(`Showing ${filter === 'all' ? 'all' : filter} courses`, 'success');
+      }
+
+      function filterAndRenderCourses() {
+          let filteredCourses = state.allCourses;
+
+          // Apply category filter
+          if (state.currentFilter !== 'all') {
+              filteredCourses = filteredCourses.filter(course => 
+                  course.category === state.currentFilter
+              );
+          }
+
+          // Apply search filter
+          if (state.searchQuery) {
+              filteredCourses = filteredCourses.filter(course =>
+                  course.title.toLowerCase().includes(state.searchQuery) ||
+                  course.instructor.toLowerCase().includes(state.searchQuery) ||
+                  course.description.toLowerCase().includes(state.searchQuery)
+              );
+          }
+
+          // Render filtered courses
+          renderCourses(filteredCourses.slice(0, state.loadedCourses));
+          
+          // Update load more button visibility
+          elements.loadMoreBtn.style.display = 
+              filteredCourses.length > state.loadedCourses ? 'inline-flex' : 'none';
+      }
+
+      function loadMore() {
+          if (state.isLoading || !state.canLoadMore) return;
+
+          state.isLoading = true;
+          elements.loading.style.display = 'block';
+          elements.loadMoreBtn.disabled = true;
+
+          // Simulate API call delay
+          setTimeout(() => {
+              // Add more courses
+              state.allCourses = [...state.allCourses, ...additionalCourses];
+              state.loadedCourses += 3;
+              
+              // Check if we have more courses to load
+              state.canLoadMore = state.loadedCourses < 15; // Arbitrary limit
+              
+              filterAndRenderCourses();
+              
+              state.isLoading = false;
+              elements.loading.style.display = 'none';
+              elements.loadMoreBtn.disabled = false;
+              
+              if (!state.canLoadMore) {
+                  elements.loadMoreBtn.innerHTML = '<i class="fa-solid fa-check"></i> All Courses Loaded';
+                  elements.loadMoreBtn.style.cursor = 'default';
+                  elements.loadMoreBtn.onclick = null;
+              }
+              
+              showNotification('New courses loaded successfully!', 'success');
+          }, 1500);
+      }
+
+      // MODAL FUNCTIONS
+      function openModal() {
+          elements.modal.style.display = 'block';
+          document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+          elements.modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+      }
+
+      function bookConsultation() {
+          showNotification('✅ Consultation booked successfully! We will contact you within 24 hours.', 'success');
+          closeModal();
+      }
+
+      function openLogin() {
+          showNotification('Login/Register feature coming soon! 👨‍💻', 'warning');
+      }
+
+      // SUBSCRIPTION FUNCTION
+      function subscribeNewsletter() {
+          const email = elements.subscribeEmail.value || elements.footerEmail.value;
+          
+          if (!validateEmail(email)) {
+              showNotification('Please enter a valid email address!', 'error');
+              return;
+          }
+
+          // Simulate API call
+          elements.loading.style.display = 'block';
+          
+          setTimeout(() => {
+              showNotification('🎉 Successfully subscribed to newsletter!', 'success');
+              
+              // Reset inputs
+              elements.subscribeEmail.value = '';
+              elements.footerEmail.value = '';
+              
+              elements.loading.style.display = 'none';
+              
+              // Log subscription (simulated)
+              console.log('New subscription:', email);
+          }, 1000);
+      }
+
+      // COURSE DETAILS VIEW
+      function showCourseDetails(course) {
+          const modalContent = `
+              <div class="modal-content" style="max-width: 700px; text-align: left;">
+                  <span class="modal-close" onclick="closeModal()">&times;</span>
+                  <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px;">
+                      <img src="${course.image}" alt="${course.title}" style="width: 100%; border-radius: 15px;">
+                      <div>
+                          <div class="course-category" style="display: inline-block; margin-bottom: 15px;">
+                              ${course.category.toUpperCase()}
+                          </div>
+                          <h2 style="margin-bottom: 15px;">${course.title}</h2>
+                          <p style="color: var(--text-muted); margin-bottom: 20px;">${course.description}</p>
+                          <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 25px;">
+                              <div style="color: var(--primary); font-size: 32px; font-weight: bold;">
+                                  ${course.price}
+                              </div>
+                              <div>
+                                  <div style="font-weight: 600;">Instructor</div>
+                                  <div style="color: var(--text-muted);">${course.instructor}</div>
+                              </div>
+                          </div>
+                          <button class="btn-primary" onclick="enrollCourse(${course.id})" style="width: 100%; padding: 15px;">
+                              <i class="fa-solid fa-cart-plus"></i> Enroll Now
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          `;
+          
+          elements.modal.innerHTML = modalContent;
+          openModal();
+      }
+
+      function enrollCourse(courseId) {
+          showNotification('🎉 Successfully enrolled in the course!', 'success');
+          closeModal();
+      }
+
+      // UTILITY FUNCTIONS
+      function showNotification(message, type = 'success') {
+          elements.notification.textContent = message;
+          elements.notification.className = `notification ${type} show`;
+          
+          setTimeout(() => {
+              elements.notification.classList.remove('show');
+          }, 3000);
+      }
+
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+
+      function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+      }
+
+      function debounce(func, wait) {
+          let timeout;
+          return function executedFunction(...args) {
+              const later = () => {
+                  clearTimeout(timeout);
+                  func(...args);
+              };
+              clearTimeout(timeout);
+              timeout = setTimeout(later, wait);
+          };
+      }
+
+      // ENROLLMENT COUNTER ANIMATION
+      function animateCounter() {
+          const counterElement = document.createElement('div');
+          counterElement.innerHTML = `
+              <div style="text-align: center; margin: 20px 0; color: var(--primary);">
+                  <h3 style="font-size: 18px; margin-bottom: 10px;">Students Enrolled</h3>
+                  <span id="enrollmentCount" style="font-size: 48px; font-weight: bold;">0</span>
+                  <span style="font-size: 18px; color: var(--text-muted);">+</span>
+              </div>
+          `;
+          
+          document.querySelector('.testimonials').appendChild(counterElement);
+          
+          // Animate counter
+          let count = 0;
+          const target = 12450;
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          
+          const timer = setInterval(() => {
+              count += increment;
+              if (count >= target) {
+                  count = target;
+                  clearInterval(timer);
+              }
+              document.getElementById('enrollmentCount').textContent = Math.floor(count).toLocaleString();
+          }, 16);
+      }
+
+      // Start counter animation after page loads
+      setTimeout(animateCounter, 2000);
+
+      // CONSOLE LOG INITIALIZATION
+      console.log(`
+🚀 CREATE X - PROFESSIONAL LEARNING PLATFORM
+✅ Version: 2.0.0
+✅ Courses loaded: ${state.allCourses.length}
+✅ Features: Filter, Search, Load More, Modals
+✅ Performance: Optimized
+✅ Responsive: Yes
+✅ Browser Support: Modern browsers
+      `);
+  </script>
+</body>
 </html>
